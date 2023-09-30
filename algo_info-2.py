@@ -54,7 +54,7 @@ pip install fear-and-greed
 # In[3]:
 
 
-df = pd.read_csv('https://raw.githubusercontent.com/ksivitz/ml/main/new_data.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/ksivitz/algo_info/main/new_data.csv')
 
 
 # In[4]:
@@ -422,7 +422,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 def lin_predictions():
 
-        df_close = pd.read_csv('https://raw.githubusercontent.com/ksivitz/ml/main/close_test.csv')
+        df_close = pd.read_csv('https://raw.githubusercontent.com/ksivitz/algo_info/main/new_close.csv')
         df_close = df_close.set_index('Date')
         df_close.index = df_close.index.astype(str)
         df_close.index = pd.to_datetime(df_close.index)
@@ -491,7 +491,7 @@ df.tail()
 # In[41]:
 
 
-closing = pd.read_csv("https://raw.githubusercontent.com/ksivitz/ml/main/close_test.csv")
+closing = pd.read_csv("https://raw.githubusercontent.com/ksivitz/algo_info/main/new_close.csv")
 
 
 # In[43]:
